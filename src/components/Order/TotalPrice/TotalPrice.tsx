@@ -1,5 +1,6 @@
 import React from 'react';
 import {MENU_ITEMS} from "../../../lib/MENU_ITEMS";
+import './TotalPrice.css';
 
 interface Props {
   list: OrderRecord[];
@@ -13,8 +14,8 @@ const TotalPrice: React.FC<Props> = ({list}) => {
   if (!totalPrice) return null;
 
   return (
-    <div>
-      Total price: <span>{totalPrice}</span>
+    <div className="TotalPrice">
+      Total price: <span>{totalPrice} KGS</span>
     </div>
   );
 };

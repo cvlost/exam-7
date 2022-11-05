@@ -1,0 +1,11 @@
+.Order-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Order-placeholder {
+    font-weight: bold;
+    color: gray;
+    font-size: 3em;
+}

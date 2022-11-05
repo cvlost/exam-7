@@ -1,23 +1,60 @@
 .MenuItem {
-
+    padding: .3em;
+    display: flex;
 }
 
 .MenuItem-btn {
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid gray;
+    outline: none;
+    transition: background-color .2s, box-shadow .2s;
+    display: flex;
+    flex: 1 1 auto;
+    padding: .5em;
+    align-items: center;
+}
 
+.MenuItem-btn:hover {
+    background: gainsboro;
+}
+
+.MenuItem-btn:active {
+    box-shadow: 0 0 5px 5px gray;
+}
+
+.MenuItem-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5em;
+    width: 4.5em;
+    margin-right: 2em;
 }
 
 .MenuItem-img {
-    width: 5em;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .MenuItem-info {
-
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .MenuItem-name {
-
+    font-size: 1.6em;
 }
 
 .MenuItem-price {
+    color: gray;
+}
 
+.MenuItem-price span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
 }
