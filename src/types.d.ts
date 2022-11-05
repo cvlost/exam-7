@@ -4,7 +4,7 @@ type MenuItem = {
   image: string;
 }
 
-type OrderItem = {
+type OrderRecord = {
   name: string;
   count: number;
 }
