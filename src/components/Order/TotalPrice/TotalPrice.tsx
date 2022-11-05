@@ -11,8 +11,6 @@ const TotalPrice: React.FC<Props> = ({list}) => {
     return acc + record.count * MENU_ITEMS.find(item => item.name === record.name)!.price;
   }, 0)
 
-  if (!totalPrice) return null;
-
   return (
     <div className="TotalPrice">
       Total price: <span>{totalPrice} KGS</span>
